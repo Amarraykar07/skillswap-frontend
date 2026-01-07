@@ -12,7 +12,9 @@ const Register = () => {
       <br />
       <input placeholder="Password" type="password" />
       <br />
-      <button onClick={() => navigate("/")}>Register</button>
+      <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 hover:scale-105 transition transform">
+  Login
+</button>
       <p>
         Already have account? <Link to="/">Login</Link>
       </p>

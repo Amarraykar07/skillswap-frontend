@@ -3,25 +3,32 @@ const Dashboard = () => {
     <div style={{ padding: "30px" }}>
       <h1>Welcome to SkillSwap+ 🚀</h1>
 
-      <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
-        <div style={cardStyle}>
-          <h3>Find Skill Matches</h3>
-          <p>AI-powered skill matching</p>
-          <button style={btn}>Explore</button>
-        </div>
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="bg-white p-6 rounded shadow hover:scale-105 hover:shadow-lg transition transform">
+    <h3 className="font-semibold">Find Matches</h3>
+    <p>AI-powered skill matching</p>
+    <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
+      Explore
+    </button>
+  </div>
 
-        <div style={cardStyle}>
-          <h3>Barter Requests</h3>
-          <p>Manage your skill swaps</p>
-          <button style={btn}>View</button>
-        </div>
+  <div className="bg-white p-6 rounded shadow hover:scale-105 hover:shadow-lg transition transform">
+    <h3 className="font-semibold">Barter Requests</h3>
+    <p>Manage your skill swaps</p>
+    <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
+      View
+    </button>
+  </div>
 
-        <div style={cardStyle}>
-          <h3>Profile</h3>
-          <p>Your trust & ratings</p>
-          <button style={btn}>Open</button>
-        </div>
-      </div>
+  <div className="bg-white p-6 rounded shadow hover:scale-105 hover:shadow-lg transition transform">
+    <h3 className="font-semibold">Profile</h3>
+    <p>Your trust & ratings</p>
+    <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
+      Open
+    </button>
+  </div>
+</div>
+
     </div>
   );
 };
